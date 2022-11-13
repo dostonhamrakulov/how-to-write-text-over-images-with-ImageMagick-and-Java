@@ -1,0 +1,20 @@
+
+
+convert photo_2022-11-08_19-47-31  -fill white  -undercolor '#00000080'  -gravity South \
+          -annotate +0+5 ' Faerie Dragon '     anno_undercolor.jpg
+
+convert -size 140x80 xc:none -fill grey \
+          -gravity NorthWest -draw "text 10,10 'Copyright'" \
+          -gravity SouthEast -draw "text 5,15 'Copyright'" \
+          miff:- |\
+    composite -tile - photo_2022-11-08_19-47-31_1  wmark_text_stamped.png
+
+convert -size 340x200 xc:none -fill grey \
+          -gravity NorthWest -draw "text 50,50 'barso.uz'" \
+          -gravity SouthEast -draw "text 100,150 'baros.uz'" \
+          miff:- |\
+    composite -tile - photo_2022-11-08_19-47-31_1.jpg  wmark_text_stamped1.jpeg
+
+convert input.jpg -gravity South -pointsize 100 -fill grey -annotate +0+100 'barso.uz' output.jpg
+
+/Users/d.hamrakulov/Projects/shaxsiy/image_printer/images/photo_2022-11-08_19-48-03.jpg -font Helvetica -gravity South -pointsize 100 -fill #c10000 -annotate 0x0+0+100 barso.uz /var/folders/_1/1ltgnvpj6xj3xl674cbpd8080000gn/T/barso_image772634248872816369.jpg
