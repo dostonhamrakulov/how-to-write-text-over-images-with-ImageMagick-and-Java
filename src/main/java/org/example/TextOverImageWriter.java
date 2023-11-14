@@ -12,15 +12,16 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
- * Hello world!
+ * Image Magic - Text Writer
  */
-public class App {
+public class TextOverImageWriter {
+
+    private static final String ORIGINAL_IMAGES_DIRECTORY = "../Projects/shaxsiy/image_printer/images";
+    private static final String OUTPUT_IMAGES_DIRECTORY = "../Projects/shaxsiy/image_printer/images/transformed";
+
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        String ORIGINAL_IMAGES_DIRECTORY = "../Projects/shaxsiy/image_printer/images";
-        String OUTPUT_IMAGES_DIRECTORY = "../Projects/shaxsiy/image_printer/images/transformed";
-
-        File imageDirectory = new File(ORIGINAL_IMAGES_DIRECTORY);
+        final File imageDirectory = new File(ORIGINAL_IMAGES_DIRECTORY);
 
         if (!imageDirectory.isDirectory() || imageDirectory.listFiles() == null) {
             return;

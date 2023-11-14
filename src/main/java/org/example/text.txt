@@ -17,4 +17,4 @@ convert -size 340x200 xc:none -fill grey \
 
 convert input.jpg -gravity South -pointsize 100 -fill grey -annotate +0+100 'barso.uz' output.jpg
 
-/Users/d.hamrakulov/Projects/shaxsiy/image_printer/images/photo_2022-11-08_19-48-03.jpg -font Helvetica -gravity South -pointsize 100 -fill #c10000 -annotate 0x0+0+100 barso.uz /var/folders/_1/1ltgnvpj6xj3xl674cbpd8080000gn/T/barso_image772634248872816369.jpg
+/PATH_TO_YOUR_FOLDER/image_printer/images/photo_2022-11-08_19-48-03.jpg -font Helvetica -gravity South -pointsize 100 -fill #c10000 -annotate 0x0+0+100 barso.uz /var/folders/_1/1ltgnvpj6xj3xl674cbpd8080000gn/T/barso_image772634248872816369.jpg
